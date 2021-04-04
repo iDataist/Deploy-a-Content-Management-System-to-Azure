@@ -13,7 +13,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'blob20210402'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'P/B0o4hPL90wLyI+6w9C7FMGaibN09NszHpW6RG9nZlYF5YnF5jbx+zd8TTr1aQPQl6iIhMC7wGyjFFCNlA7rQ=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'viEU00q8AAL91Pk8A3GUEWtE5IqDuIT/pBjF5iYfXI/IzvIAWYODgmscDBi8ghsB6qc5IEoNi/5tcZX47A6Y0Q=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
     CLIENT_SECRET = "gQs.mxTeHVw.rLLBK9bt54M8Er-8c6~1jV"
