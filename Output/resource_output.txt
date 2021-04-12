@@ -1,0 +1,215 @@
+
+$ sh resource.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    14  100    14    0     0     51      0 --:--:-- --:--:-- --:--:--    51
+207.231.41.242
+{
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405",
+  "location": "westus2",
+  "managedBy": null,
+  "name": "group20210405",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+Configured default 'group-20210405' for arg resource_group_name
+Configured default 'centralus' for arg location
+Argument '--enable-public-network' is in preview and under development. Reference and support levels: https://aka.ms/CLI_refstatus
+{
+  "administratorLogin": "dbadmin",
+  "administratorLoginPassword": null,
+  "fullyQualifiedDomainName": "sqlserver20210405.database.windows.net",
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405/providers/Microsoft.Sql/servers/sqlserver20210405",
+  "identity": null,
+  "kind": "v12.0",
+  "location": "westus2",
+  "minimalTlsVersion": null,
+  "name": "sqlserver20210405",
+  "privateEndpointConnections": [],
+  "publicNetworkAccess": "Enabled",
+  "resourceGroup": "group20210405",
+  "state": "Ready",
+  "tags": null,
+  "type": "Microsoft.Sql/servers",
+  "version": "12.0"
+}
+Command ran in 72.518 seconds (init: 0.827, invoke: 71.691)
+Configured default 'group-20210405' for arg resource_group_name
+{
+  "endIpAddress": "0.0.0.0",
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405/providers/Microsoft.Sql/servers/sqlserver20210405/firewallRules/azureaccess",
+  "kind": "v12.0",
+  "location": "West US 2",
+  "name": "azureaccess",
+  "resourceGroup": "group20210405",
+  "startIpAddress": "0.0.0.0",
+  "type": "Microsoft.Sql/servers/firewallRules"
+}
+Command ran in 5.068 seconds (init: 1.050, invoke: 4.018)
+Configured default 'group-20210405' for arg resource_group_name
+{
+  "endIpAddress": "207.231.41.242",
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405/providers/Microsoft.Sql/servers/sqlserver20210405/firewallRules/clientip",
+  "kind": "v12.0",
+  "location": "West US 2",
+  "name": "clientip",
+  "resourceGroup": "group20210405",
+  "startIpAddress": "207.231.41.242",
+  "type": "Microsoft.Sql/servers/firewallRules"
+}
+Command ran in 4.726 seconds (init: 0.829, invoke: 3.898)
+Configured default 'group-20210405' for arg resource_group_name
+{
+  "autoPauseDelay": null,
+  "backupStorageRedundancy": "Geo",
+  "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+  "collation": "SQL_Latin1_General_CP1_CI_AS",
+  "createMode": null,
+  "creationDate": "2021-04-12T14:51:15.113000+00:00",
+  "currentServiceObjectiveName": "Basic",
+  "currentSku": {
+    "capacity": 5,
+    "family": null,
+    "name": "Basic",
+    "size": null,
+    "tier": "Basic"
+  },
+  "databaseId": "9e66dbe3-51e9-46ab-8090-986f91c550a1",
+  "defaultSecondaryLocation": "westcentralus",
+  "earliestRestoreDate": null,
+  "edition": "Basic",
+  "elasticPoolId": null,
+  "elasticPoolName": null,
+  "failoverGroupId": null,
+  "highAvailabilityReplicaCount": null,
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405/providers/Microsoft.Sql/servers/sqlserver20210405/databases/sqldb20210405",
+  "kind": "v12.0,user",
+  "licenseType": null,
+  "location": "westus2",
+  "longTermRetentionBackupResourceId": null,
+  "maintenanceConfigurationId": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default",
+  "managedBy": null,
+  "maxLogSizeBytes": null,
+  "maxSizeBytes": 2147483648,
+  "minCapacity": null,
+  "name": "sqldb20210405",
+  "pausedDate": null,
+  "readScale": "Disabled",
+  "recoverableDatabaseId": null,
+  "recoveryServicesRecoveryPointId": null,
+  "requestedServiceObjectiveName": "Basic",
+  "resourceGroup": "group20210405",
+  "restorableDroppedDatabaseId": null,
+  "restorePointInTime": null,
+  "resumedDate": null,
+  "sampleName": null,
+  "secondaryType": null,
+  "sku": {
+    "capacity": 5,
+    "family": null,
+    "name": "Basic",
+    "size": null,
+    "tier": "Basic"
+  },
+  "sourceDatabaseDeletionDate": null,
+  "sourceDatabaseId": null,
+  "status": "Online",
+  "tags": null,
+  "type": "Microsoft.Sql/servers/databases",
+  "zoneRedundant": false
+}
+Command ran in 53.273 seconds (init: 0.849, invoke: 52.424)
+{
+  "accessTier": "Hot",
+  "allowBlobPublicAccess": null,
+  "allowSharedKeyAccess": null,
+  "azureFilesIdentityBasedAuthentication": null,
+  "blobRestoreStatus": null,
+  "creationTime": "2021-04-12T14:51:26.567253+00:00",
+  "customDomain": null,
+  "enableHttpsTrafficOnly": true,
+  "enableNfsV3": null,
+  "encryption": {
+    "encryptionIdentity": null,
+    "keySource": "Microsoft.Storage",
+    "keyVaultProperties": null,
+    "requireInfrastructureEncryption": null,
+    "services": {
+      "blob": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2021-04-12T14:51:26.645390+00:00"
+      },
+      "file": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2021-04-12T14:51:26.645390+00:00"
+      },
+      "queue": null,
+      "table": null
+    }
+  },
+  "extendedLocation": null,
+  "failoverInProgress": null,
+  "geoReplicationStats": null,
+  "id": "/subscriptions/5bb35c36-233e-4b7e-afd9-a2b795899fb9/resourceGroups/group20210405/providers/Microsoft.Storage/storageAccounts/blob20210405",
+  "identity": null,
+  "isHnsEnabled": null,
+  "kind": "StorageV2",
+  "largeFileSharesState": null,
+  "lastGeoFailoverTime": null,
+  "location": "westus2",
+  "minimumTlsVersion": null,
+  "name": "blob20210405",
+  "networkRuleSet": {
+    "bypass": "AzureServices",
+    "defaultAction": "Allow",
+    "ipRules": [],
+    "resourceAccessRules": null,
+    "virtualNetworkRules": []
+  },
+  "primaryEndpoints": {
+    "blob": "https://blob20210405.blob.core.windows.net/",
+    "dfs": "https://blob20210405.dfs.core.windows.net/",
+    "file": "https://blob20210405.file.core.windows.net/",
+    "internetEndpoints": null,
+    "microsoftEndpoints": null,
+    "queue": "https://blob20210405.queue.core.windows.net/",
+    "table": "https://blob20210405.table.core.windows.net/",
+    "web": "https://blob20210405.z5.web.core.windows.net/"
+  },
+  "primaryLocation": "westus2",
+  "privateEndpointConnections": [],
+  "provisioningState": "Succeeded",
+  "resourceGroup": "group20210405",
+  "routingPreference": null,
+  "secondaryEndpoints": {
+    "blob": "https://blob20210405-secondary.blob.core.windows.net/",
+    "dfs": "https://blob20210405-secondary.dfs.core.windows.net/",
+    "file": null,
+    "internetEndpoints": null,
+    "microsoftEndpoints": null,
+    "queue": "https://blob20210405-secondary.queue.core.windows.net/",
+    "table": "https://blob20210405-secondary.table.core.windows.net/",
+    "web": "https://blob20210405-secondary.z5.web.core.windows.net/"
+  },
+  "secondaryLocation": "westcentralus",
+  "sku": {
+    "name": "Standard_RAGRS",
+    "tier": "Standard"
+  },
+  "statusOfPrimary": "available",
+  "statusOfSecondary": "available",
+  "tags": {},
+  "type": "Microsoft.Storage/storageAccounts"
+}
+There are no credentials provided in your command and environment, we will query for the account key inside your storage account.
+Please provide --connection-string, --account-key or --sas-token as credentials, or use `--auth-mode login` if you have required RBAC roles in your command. For more information about RBAC roles in storage, visit https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-cli.
+Setting the corresponding environment variables can avoid inputting credentials 
+in your command. Please use --help to get more information.
+{
+  "created": true
+}
