@@ -1,25 +1,26 @@
 import os
+from pathlib import Path
+from dotenv import load_dotenv
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+env_path = Path('.', '.env')
+load_dotenv(dotenv_path=env_path)
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
-
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'db-server-20210402.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'db-20210402'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'dbadmin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'p@ssword1234'
+    SQL_SERVER = os.getenv('SQL_SERVER') 
+    SQL_DATABASE = os.getenv('SQL_DATABASE') 
+    SQL_USER_NAME = os.getenv('SQL_USER_NAME') 
+    SQL_PASSWORD = os.getenv('SQL_PASSWORD') 
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'blob20210402'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'viEU00q8AAL91Pk8A3GUEWtE5IqDuIT/pBjF5iYfXI/IzvIAWYODgmscDBi8ghsB6qc5IEoNi/5tcZX47A6Y0Q=='
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
-
-    CLIENT_SECRET = "gQs.mxTeHVw.rLLBK9bt54M8Er-8c6~1jV"
-    AUTHORITY = "https://login.microsoftonline.com/hwdgrmygmail.onmicrosoft.com"
-    CLIENT_ID = "cefd54a1-1a2e-4600-a04f-072a4df822f2"
+    BLOB_ACCOUNT = os.getenv('BLOB_ACCOUNT') 
+    BLOB_STORAGE_KEY = os.getenv('BLOB_STORAGE_KEY') 
+    BLOB_CONTAINER = os.getenv('BLOB_CONTAINER') 
+    
+    CLIENT_SECRET = os.getenv('CLIENT_SECRET')
+    AUTHORITY = os.getenv('AUTHORITY')
+    CLIENT_ID = os.getenv('CLIENT_ID')
     REDIRECT_PATH = "/getAToken"
     SCOPE = ["User.Read"]
     SESSION_TYPE = "filesystem"
-
