@@ -40,24 +40,16 @@ Virtual Machines may be necessary in the near future if:
 
 - The company needs increased level of control over the underlying OS and meets higher security requirements.
 
-## Steps to deploy the webapp
-1. Create the resources in Azure by running the command below. The output should look like [resource_output.txt](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/Output/resource_output.txt). 
-    ```
-    sh resource.sh
-    ```
-    ![](output/resource-group.png)
+## Steps
+1. Create the resources in Azure by running:
+ ```
+ sh resource.sh
+ ```
+2. Create an App Service to deploy the FlaskWebProject to Azure by running: 
+```
+```
+3. Add logging for whether users successfully or unsuccessfully logged in.
 
-2. Populate the SQL tables by running the [SQL scripts](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/tree/main/SqlScripts) from the Query Editor on the Azure portal.
-![](output/sqldb.png)
-
-3. Add the Sign In With Microsoft functionality from App Registrations on the portal: specify the Front-channel logout URL and Redirect URL, and add client secret. 
-![](output/app-registration.png)
-![](output/client-secret.png)
-    The Login redentials for admin is: 
-    - Username: admin
-    - Password: pass
-4. Update the .env file to reflect the resources that have been created.
-5. Create an App Service to deploy the FlaskWebProject to Azure by running the command below. The output should look like [webapp_output.txt](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/Output/webapp_output.txt). 
-    ```
-    sh webapp.sh
-    ```
+## Log In Credentials for FlaskWebProject
+- Username: admin
+- Password: pass
