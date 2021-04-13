@@ -49,7 +49,7 @@ Virtual Machines may be necessary in the near future if:
 ![](output/app-registration.png)
 ![](output/client-secret.png)
 
-4. Update the .env file to reflect the resources that have been created.
+4. Update the config.py file to reflect the resources that have been created.
 5. Create an App Service to deploy the FlaskWebProject to Azure by running the command below. The output should look like [webapp_output.txt](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/Output/webapp_output.txt). 
     ```
     zsh webapp.zsh
