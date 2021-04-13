@@ -16,9 +16,9 @@ class Config(object):
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'f1hN4QPC17A8izYOsMe1baQ7EiXmk8cXMCmozLapjOckyAHUBv77lT/U9k+SD2vEfXbjKDNza5lKBoYrxuiBjw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    CLIENT_SECRET = "EM913Ip.XvNyr4Qv~L~.o3aU.65.T.7uKJ"
+    CLIENT_SECRET = "EM913Ip.XvNyr4Qv~L~.o3aU.65.T.7uKJ" # Certificates & secrets from App Registration
     AUTHORITY = "https://login.microsoftonline.com/hwdgrmygmail.onmicrosoft.com"
-    CLIENT_ID = "2a2f7217-a41c-4700-b22e-eeaaaeff62c3"
+    CLIENT_ID = "0e474e20-b2bc-4f33-95d6-7fe8dd478706" # Application (client) ID from App Registration
     REDIRECT_PATH = "/getAToken"
     SCOPE = ["User.Read"]
     SESSION_TYPE = "filesystem"
