@@ -1,5 +1,5 @@
 # Deploying an Article Content Management System with Azure
-This project showcases a Flask web application built with Azure. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. Users can sign in with Microsoft accounts.
+This project showcases a Flask web application deployed with Azure. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. Users can sign in with Microsoft accounts.
 
 ## Dependencies
 1. An Azure account
@@ -54,9 +54,9 @@ Virtual Machines may be necessary in the near future if:
     ```
     zsh webapp.zsh
     ```
-6. Login with the admin credentials (Username: admin, Password: pass) or Microsoft credentials and interact with the websites. 
+6. Login with the admin credentials (Username: admin, Password: pass) or Microsoft credentials and interact with the websites. The logging is configured in the [__init__.py](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/FlaskWebProject/__init__.py) script and the login function of the [view.py](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/FlaskWebProject/views.py) 
 ![](output/posts.png)
 ![](output/sqldb-posts.png)
-7. Check the logging info for valid and invalid login attempts. 
+7. Check the log for valid and invalid login attempts. 
 ![](output/log-in-successfully.png)
 ![](output/invalid-login.png)
