@@ -1,5 +1,5 @@
 # Deploying an Article Content Management System with Azure
-This project showcases a Flask web application deployed with Azure. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. Users can sign in with Microsoft accounts.
+I built a web application that allows users to create and edit articles. The front-end application is built with the Python Flask micro framework. The title, author, and body of the articles are stored in an Azure SQL Server. The image is stored in Azure Blob Storage. Users can sign in with Microsoft accounts.
 
 ## Dependencies
 1. An Azure account
