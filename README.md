@@ -38,7 +38,7 @@ Virtual Machines may be necessary in the near future if:
 ## Steps to deploy the webapp
 1. Create the resources in Azure by running the command below. The output should look like [resource_output.txt](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/Output/resource_output.txt). 
     ```
-    zsh resource.zsh
+    bash resource.sh
     ```
     ![](output/resource-group.png)
 
@@ -52,7 +52,7 @@ Virtual Machines may be necessary in the near future if:
 4. Update the config.py file to reflect the resources that have been created.
 5. Create an App Service to deploy the FlaskWebProject to Azure by running the command below. The output should look like [webapp_output.txt](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/Output/webapp_output.txt). 
     ```
-    zsh webapp.zsh
+    bash webapp.sh
     ```
 6. Login with the admin credentials (Username: admin, Password: pass) or Microsoft credentials and interact with the websites. The logging is configured in the [__init__.py](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/FlaskWebProject/__init__.py) script and the login function of the [view.py](https://github.com/iDataist/Deploy-a-Content-Management-System-to-Azure/blob/main/FlaskWebProject/views.py).
 ![](output/posts.png)
